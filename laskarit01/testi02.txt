@@ -1,0 +1,2 @@
+tämä file local repositoryssa luotiin tyhjänä
+lisätty githupissa tähän fileen nämä rivit
