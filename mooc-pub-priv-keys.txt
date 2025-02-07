@@ -10,15 +10,15 @@ ssh-add c:/Users/YOU/.ssh/id_rsa # lisää private key agentille
 
 
 cd 
-mkdir mooc-harj03-b # luo local repository
-cd mooc-harj03-b
+mkdir mooc-harj04 # luo local repository
+cd mooc-harj04
 git init
 
-# githubissa oleva etärep mooc-harj03 näkyväksi tälle koneelle
-git remote add origin git@github.com:moocjsi/mooc-harj03.git
+# githubissa oleva etärep mooc-harj04 näkyväksi tälle koneelle
+git remote add origin git@github.com:moocjsi/mooc-harj04.git
 git remote -v
 
-# githubista tavarat tälle koneelle, pwd oltava mooc-harj03-b
+# githubista tavarat tälle koneelle, pwd oltava mooc-harj04
 git pull -v origin main
 # toisin päin, lokaali -> github
 git push --set-upstream origin master  # tai pelkkä git push 2. kerralla
