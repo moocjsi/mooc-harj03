@@ -1,0 +1,24 @@
+
+
+ssh-keygen -t rsa -b 4096 -C "moocjsi@github.com" # create pub&priv key
+
+cat ~/.ssh/id_rsa.pub | clip # pub key talteen clipboardille
+# pub key pasteten githubiin, settings - SSH and GPG keys
+
+eval "$(ssh-agent -s)"  # create ssh-agent
+ssh-add c:/Users/YOU/.ssh/id_rsa # lisää private key agentille
+
+
+cd 
+mkdir mooc-harj04 # luo local repository
+cd mooc-harj04
+git init
+
+# githubissa oleva etärep mooc-harj04 näkyväksi tälle koneelle
+git remote add origin git@github.com:moocjsi/mooc-harj04.git
+git remote -v
+
+# githubista tavarat tälle koneelle, pwd oltava mooc-harj04
+git pull -v origin main
+# toisin päin, lokaali -> github
+git push --set-upstream origin master  # tai pelkkä git push 2. kerralla
