@@ -20,4 +20,9 @@ sequenceDiagram
 
     Note right of browser: selain alkaa  javascript-koodin suorituksen joka hakee JSON:in palvelimelta
 
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    activate server
+    server-->>browser: [{ "content": "moi" }, ... ]
+    deactivate server
+
 ```
