@@ -18,6 +18,6 @@ sequenceDiagram
     server-->>browser: the JavaScript file
     deactivate server
 
-    Note right of browser: The browser starts executing the JavaScript code that fetches the JSON from the server/selain alkaa  javascript-koodin suorituksen joka hakee JSON:in palvelimelta
+    Note right of browser: selain alkaa  javascript-koodin suorituksen joka hakee JSON:in palvelimelta
 
 ```
