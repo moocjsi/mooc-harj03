@@ -25,4 +25,5 @@ sequenceDiagram
     server-->>browser: [{ "content": "moi" }, ... ]
     deactivate server
 
+    Note right of browser: selain suorittaa callback-rutiinin joka näyttää muistiinpanot ruudulla
 ```
