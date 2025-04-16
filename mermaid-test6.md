@@ -28,6 +28,6 @@ sequenceDiagram
 
     Note right of browser: selain suorittaa callback-rutiinin joka näyttää muistiinpanot ruudulla
 
-    Note right of user: käyttäjä klikkaa input-kentän ja kirjoittaa siihen tekstiä
+    Note right of user: käyttäjä klikkaa input-kentän ja kirjoittaa siihen tekstiä ja painaa enter
 
 ```
