@@ -1,5 +1,6 @@
 ```mermaid
 sequenceDiagram
+    participant user
     participant browser
     participant server
     
@@ -26,4 +27,7 @@ sequenceDiagram
     deactivate server
 
     Note right of browser: selain suorittaa callback-rutiinin joka näyttää muistiinpanot ruudulla
+
+    Note right of user: käyttäjä klikkaa input-kentän ja kirjoittaa siihen tekstiä
+
 ```
