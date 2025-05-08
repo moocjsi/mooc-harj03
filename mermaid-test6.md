@@ -30,4 +30,7 @@ sequenceDiagram
 
     Note right of user: käyttäjä klikkaa input-kentän ja kirjoittaa siihen tekstiä ja painaa enter
 
+    Note right of browser: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+
+
 ```
