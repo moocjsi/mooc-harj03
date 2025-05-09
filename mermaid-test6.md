@@ -28,7 +28,7 @@ sequenceDiagram
 
     Note right of browser: selain suorittaa callback-rutiinin joka näyttää muistiinpanot ruudulla
 
-    Note right of user: käyttäjä klikkaa input-kentän ja kirjoittaa siihen tekstiä ja painaa enter
+    Note right of user: sivulla notes käyttäjä klikkaa input-kentän ja kirjoittaa siihen tekstiä ja painaa enter
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
