@@ -32,7 +32,7 @@ sequenceDiagram
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
-    server->>browser: text file
+    server->>browser: status code 302
     deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
