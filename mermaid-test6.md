@@ -31,8 +31,8 @@ sequenceDiagram
     Note right of user: sivulla notes käyttäjä klikkaa input-kentän ja kirjoittaa siihen tekstiä ja painaa enter
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
-    activate server
     Note right of browser: palvelin lisää käyttäjän tekstin taulukkoon notes
+    activate server
     server->>browser: status code 302
     deactivate server
 
