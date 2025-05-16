@@ -4,6 +4,8 @@ sequenceDiagram
     participant user
     participant browser
     participant server
+
+    Note right of user: käyttäjä kirjoittaa selaimen osoitekenttään https://studies.cs.helsinki.fi/exampleapp/spa ja painaa enter
     
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa.html
     activate server
