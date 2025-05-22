@@ -5,8 +5,7 @@ sequenceDiagram
     participant browser
     participant server
     
-    Note right of browser: käyttäjä on sivulla https://studies.cs.helsinki.fi/exampleapp/notes
-
+    Note right of user: käyttäjä on sivulla https://studies.cs.helsinki.fi/exampleapp/notes
     Note right of user: sivulla notes käyttäjä klikkaa input-kentän ja kirjoittaa siihen tekstiä ja painaa enter
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
