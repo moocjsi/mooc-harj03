@@ -1,0 +1,72 @@
+---
+uuden istunnon alussa pitänee tehdä eval... ja ssh-add...
+toimivat skriptit ovat client-server02 -hakemistossa server3.js ja index3.html
+---
+Step 1: Install Node.js and Express
+Install Node.js: If you don't have Node.js installed, you can download it from the Node.js official website.
+
+2. Create a new project directory and navigate to it in your terminal.
+
+3. Initialize a new Node.js project: bash:
+npm init -y
+
+4. Install Express: bash:
+npm install express
+
+Step 2: Create the Server Script
+Create a new file called server.js and add the following code:
+---------
+const express = require('express');
+const path = require('path');
+const app = express();
+const port = 3000;
+
+// Middleware to parse URL-encoded data
+app.use(express.urlencoded({ extended: true }));
+
+// Serve the HTML form
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index3.html'));
+});
+
+// Handle form submission and return uppercase name
+app.post('/uppercase', (req, res) => {
+  const name = req.body.name;
+  const uppercaseName = name.toUpperCase();
+  res.send(`Your name in uppercase is3: ${uppercaseName}`);
+});
+
+// Start the server
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}`);
+});
+----------
+
+Step 3: Create the HTML Form
+Create a new file called index.html in the same directory as server.js and add the following HTML code:
+---------
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Uppercase Name</title>
+</head>
+<body>
+  <form action="/uppercase" method="post">
+    <label for="name">Enter your name3:</label>
+    <input type="text" id="name" name="name" required>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
+-----------
+
+Step 4: Run the Server
+Start the server by running the following command in your terminal:
+
+bash
+node server.js
+
+Open index.html in your browser.  https://localhost:3000/  valittaa ettei secure, anna http:// jne
+
+Enter your name in the form and submit it. The server will receive the name, convert it to uppercase, and return it as a JSON response.
+That's it
