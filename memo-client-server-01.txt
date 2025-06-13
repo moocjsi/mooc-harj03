@@ -1,4 +1,5 @@
 ---
+13jun25
 uuden istunnon alussa pitänee tehdä eval... ja ssh-add...
 toimivat skriptit ovat client-server02 -hakemistossa server3.js ja index3.html
 ---
