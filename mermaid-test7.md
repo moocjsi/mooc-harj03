@@ -22,6 +22,8 @@ sequenceDiagram
     server-->>browser: the JavaScript file
     deactivate server
 
-    Note right of browser: selain alkaa  javascript-koodin suorituksen joka...
+    Note right of browser: selain alkaa  javascript-koodin suorituksen
+
+    browser->>server: GET /exampleapp/data.json
 
 ```
