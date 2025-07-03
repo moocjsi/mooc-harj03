@@ -25,4 +25,11 @@ sequenceDiagram
     Note right of browser: selain alkaa  javascript-koodin suorituksen joka hakee JSON:in palvelimelta
     browser->>server: GET /exampleapp/data.json
 
+    activate server
+    server-->>browser: [{ "content": "moi" }, ... ]
+    deactivate server
+
+    Note right of browser: selain suorittaa callback-rutiinin joka näyttää muistiinpanot ruudulla
+
+
 ```
