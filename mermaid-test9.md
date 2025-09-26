@@ -11,8 +11,7 @@ sequenceDiagram
     browser->>server: GET  https://studies.cs.helsinki.fi/exampleapp/spa.html  EI TÄMÄ vaan seuraava
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
 
-    Note right of browser: selain alkaa  javascript-koodin suorituksen joka hakee JSON:in palvelimelta
-    browser->>server: GET /exampleapp/data.json
+    Note right of browser: palvelin lisää käyttäjän inputin tietokantaan ja päivittää DOM-puun
 
     activate server
     server-->>browser: [{ "content": "moi" }, ... ]
