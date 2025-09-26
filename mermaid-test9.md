@@ -14,10 +14,10 @@ sequenceDiagram
     Note right of browser: palvelin lisää käyttäjän inputin tietokantaan ja päivittää DOM-puun
 
     activate server
-    server-->>browser: [{ "content": "moi" }, ... ]
+    server->>browser: status code 302
     deactivate server
 
-    Note right of browser: selain suorittaa callback-rutiinin joka näyttää muistiinpanot ruudulla
+    Note right of browser: selain...
 
 
 ```
