@@ -14,7 +14,7 @@ sequenceDiagram
     Note right of browser: palvelin lisää käyttäjän inputin tietokantaan ja päivittää DOM-puun
 
     activate server
-    server->>browser: status code 302
+    server->>browser: status code 201
     deactivate server
 
     Note right of browser: selain...
