@@ -6,7 +6,7 @@ sequenceDiagram
     participant server
 
     Note right of user: käyttäjä on sivulla https://studies.cs.helsinki.fi/exampleapp/spa
-    user->>brower: käyttäjän input
+    user->>browser: käyttäjän input
 
     activate browser
     Note right of browser: form.onsubmit aktivoituu, estetään lomakkeen lähetyksen oletusarvoinen toiminta
