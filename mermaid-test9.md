@@ -10,7 +10,7 @@ sequenceDiagram
 
     activate browser
     Note right of browser: form.onsubmit aktivoituu, estetään lomakkeen lähetyksen oletusarvoinen toiminta
-    Note right of browser: lisätään käyttäjän tieto ohjelmansisäiselle listalle notes
+    Note right of browser: lisätään käyttäjän input ohjelmansisäiselle listalle notes
     Note right of browser: ruudun notes-lista päivitetään
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
     deactivate browser
