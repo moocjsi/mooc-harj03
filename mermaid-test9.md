@@ -17,7 +17,6 @@ sequenceDiagram
 
     activate server
     Note right of server: palvelin lisää käyttäjän inputin tietokantaan
-    Note right of server: 
     server->>browser: status code 201
     deactivate server
 
