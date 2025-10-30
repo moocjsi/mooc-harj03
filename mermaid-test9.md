@@ -20,7 +20,7 @@ sequenceDiagram
     server->>browser: status code 201
     deactivate server
 
-    Note right of browser: lokataan konsolille "note created"
+    Note right of browser: kun valmis, lokataan konsolille "note created"
 
 
 ```
