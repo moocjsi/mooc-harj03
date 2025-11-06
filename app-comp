@@ -1,0 +1,28 @@
+const App = () => {
+
+function permute(str, prefix = '') {
+  if (str.length === 0) {
+    console.log(prefix);
+  } else {
+    for (let i = 0; i < str.length; i++) {
+      const rem = str.slice(0, i) + str.slice(i + 1);
+      permute(rem, prefix + str[i]);
+    }
+  }
+}
+
+    const input = 'abc';
+    permute(input);
+    const friends = [
+    { name: 'Leevi poijju', age: 654 },
+    { name: 'Venla tyt', age: 10 },
+  ]
+
+  return (
+    <div>
+      <p>Hello permute</p>
+    </div>
+  )
+}
+
+export default App
